@@ -1,6 +1,6 @@
 const gql = require("graphql-tag");
 
-const typeDfs = gql`
+const typeDefs = gql`
 "A track is a group of Modules that teaches about a specific topic"
 type Track {
   "ID of the track, should not be null"
@@ -47,7 +47,7 @@ type Author {
   photo: String
 }
 
-"A query is the entry point to our schema
+"A query is the entry point to our schema"
 type Query {
   "Get all tracks"
   tracks: [Track]
@@ -57,4 +57,4 @@ type Query {
 }
 `;
 
-module.exports = typeDfs;
+module.exports = typeDefs;
